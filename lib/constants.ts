@@ -1,3 +1,6 @@
+import PortfolioImage from "@/public/portfolio_image.png"
+import { StaticImageData } from "next/image"
+
 type NavLinkItem = {
     name: string,
     url: string
@@ -40,4 +43,36 @@ export const SERVICES: ServiceItem[] = [
         title: 'Mauris pharetra',
         description: 'Suspendisse efficitur, justo id consectetur maximus, est ex pellentesque elit.'
     }
+]
+
+type PortfolioImage = {
+    src: string | StaticImageData,
+    alt: string
+}
+
+export const PORTFOLIO_IMAGES: PortfolioImage[] = [
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
+    {
+        src: PortfolioImage,
+        alt: 'teszt'
+    },
 ]
