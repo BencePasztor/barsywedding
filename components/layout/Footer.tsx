@@ -2,7 +2,7 @@ import { getCopyrightYear } from "@/utils/date-utils"
 
 const Footer = () => {
   return (
-    <footer className="p-4 flex items-center justify-center bg-secondary text-cbg text-xs">
+    <footer className="flex items-center justify-center p-4 text-xs bg-secondary">
       Copyright © {getCopyrightYear()} | Barsy Wedding
     </footer>
   )
