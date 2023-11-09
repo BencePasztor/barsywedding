@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'parallax': 'url("/parallax.png")',
+        'parallax': 'url("/parallax.webp")',
       },
       colors: {
         'ctext': '#130902',
