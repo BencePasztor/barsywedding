@@ -51,7 +51,7 @@ const About = () => {
                 </motion.div>
                 {/* Text */}
                 <motion.div variants={textVariants} className="w-full max-w-xs">
-                    <p><span className="text-primary-500">Bary Ágnes</span> vagyok, esküvői díszítéssel foglalkozom.<br />Mauris tempor aliquam convallis. Ut quis orci ultrices neque efficitur blandit id id ipsum. Cras luctus lacinia velit, id accumsan odio finibus ut. Suspendisse accumsan justo vel sem tristique condimentum. Proin sit amet semper massa, quis placerat sapien. Duis sed ullamcorper nulla. Vestibulum rutrum bibendum purus, ac mollis mi.</p>
+                    <p><span className="text-primary-500">XY</span> vagyok, esküvői díszítéssel foglalkozom.<br />Mauris tempor aliquam convallis. Ut quis orci ultrices neque efficitur blandit id id ipsum. Cras luctus lacinia velit, id accumsan odio finibus ut. Suspendisse accumsan justo vel sem tristique condimentum. Proin sit amet semper massa, quis placerat sapien. Duis sed ullamcorper nulla. Vestibulum rutrum bibendum purus, ac mollis mi.</p>
                 </motion.div>
             </motion.div>
         </section>

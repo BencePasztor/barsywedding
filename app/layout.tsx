@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Barsy Wedding',
-  description: 'Segítek, hogy az álomesküvőd valósággá váljon.', //TODO: Jobb szöveget
+  description: 'Segítek, hogy az álomesküvőd valósággá váljon.'
 }
 
 export default function RootLayout({
