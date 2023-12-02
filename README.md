@@ -3,6 +3,8 @@
 ## About
 A **work in progress** portfolio website for my sister-in-law. 
 
+**DEMO: https://barsywedding.vercel.app/**
+
 ![bw_1](https://github.com/BencePasztor/barsywedding/assets/41210416/fe3645cd-a0f7-4d29-940b-11f2493ba5b0)
 ![bw_2](https://github.com/BencePasztor/barsywedding/assets/41210416/6211675f-3ff1-4060-81a5-11e551cb0785)
 
