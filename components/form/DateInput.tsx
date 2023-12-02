@@ -21,4 +21,6 @@ const DateInput = forwardRef<HTMLInputElement, DateInputProps>(({ onClick, ...re
     )
 })
 
+DateInput.displayName = 'DateInput'
+
 export default DateInput

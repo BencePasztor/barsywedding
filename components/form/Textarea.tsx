@@ -5,18 +5,18 @@ import { twMerge } from 'tailwind-merge'
 import clsx from 'clsx'
 import Label from '@/components/form/Label'
 
-export type InputProps = {
+export type TextareaProps = {
     id: string,
     label: string,
     error?: string
 } & ComponentPropsWithoutRef<"textarea">
 
-const INPUT_CLASSES: Record<string, string> = {
+const TEXTAREA_CLASSES: Record<string, string> = {
     normal: "border-gray-400 focus:outline-primary-500 focus:border-primary-500",
     error: "border-red-400 focus:outline-red-500 focus:red-primary-500"
 }
 
-const Input = forwardRef<HTMLTextAreaElement, InputProps>(({ id, label, error, required, ...restProps }, ref) => {
+const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({ id, label, error, required, ...restProps }, ref) => {
     return (
         <div className="my-2.5">
             <Label
@@ -33,8 +33,8 @@ const Input = forwardRef<HTMLTextAreaElement, InputProps>(({ id, label, error, r
                 aria-invalid={error ? 'true' : 'false'}
                 className={twMerge(
                     clsx({
-                        [INPUT_CLASSES.normal]: !error,
-                        [INPUT_CLASSES.error]: error,
+                        [TEXTAREA_CLASSES.normal]: !error,
+                        [TEXTAREA_CLASSES.error]: error,
                     }),
                     "p-2.5 text-sm rounded-lg block border w-full"
                 )}
@@ -47,4 +47,6 @@ const Input = forwardRef<HTMLTextAreaElement, InputProps>(({ id, label, error, r
     )
 })
 
-export default Input
+Textarea.displayName = 'Textarea'
+
+export default Textarea

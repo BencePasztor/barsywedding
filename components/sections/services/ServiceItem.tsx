@@ -23,6 +23,10 @@ const ServiceItem = forwardRef<HTMLLIElement, ServiceItemProps>(({ title, descri
     )
 })
 
+ServiceItem.displayName = 'ServiceItem'
+
 const MotionServiceItem = motion(ServiceItem)
+
+MotionServiceItem.displayName = 'MotionServiceItem'
 
 export default MotionServiceItem

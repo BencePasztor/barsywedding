@@ -22,6 +22,10 @@ const MenuButton = forwardRef<HTMLButtonElement>((props, ref) => {
     )
 })
 
+MenuButton.displayName = 'MenuButton'
+
 const MotionMenuButton = motion(MenuButton)
+
+MotionMenuButton.displayName = 'MotionMenuButton'
 
 export default MotionMenuButton

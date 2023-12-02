@@ -9,6 +9,10 @@ const Brand = forwardRef<HTMLAnchorElement>((props, ref) => {
     )
 })
 
+Brand.displayName = 'Brand'
+
 const MotionBrand = motion(Brand)
+
+MotionBrand.displayName = 'MotionBrand'
 
 export default MotionBrand
