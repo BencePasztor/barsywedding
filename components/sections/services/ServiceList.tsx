@@ -2,7 +2,6 @@
 
 import ServiceItem from "@/components/sections/services/ServiceItem"
 import { SERVICES } from "@/lib/constants"
-import { motion } from "framer-motion"
 
 const ServiceList = () => {
 
@@ -24,22 +23,20 @@ const ServiceList = () => {
     }
 
     return (
-        <motion.ul
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="flex lg:flex-row flex-col gap-8 lg:items-stretch items-center justify-center"
-        >
+        <ul className="flex lg:flex-row flex-col gap-8 lg:items-stretch items-center justify-center">
             {SERVICES.map(({ title, description }, index) => (
                 <ServiceItem
                     key={index}
                     title={title}
                     description={description}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.1 }}
                     variants={serviceItemVariants}
                     custom={index}
                 />
             ))}
-        </motion.ul>
+        </ul>
     )
 }
 
